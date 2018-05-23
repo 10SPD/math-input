@@ -2,14 +2,14 @@
  * A component that renders a single SVG icon.
  */
 
-const React = require('react');
+const React = require('react'); const PropTypes = require('prop-types');
 
 const Iconography = require('./iconography');
 
 class SvgIcon extends React.Component {
     static propTypes = {
-        color: React.PropTypes.string.isRequired,
-        name: React.PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
     };
 
     render() {

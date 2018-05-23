@@ -1,7 +1,7 @@
 /**
  * A component that renders the RIGHT iconograpy in SVG.
  */
-const React = require('react');
+const React = require('react'); const PropTypes = require('prop-types');
 
 const Arrow = require('./arrow');
 

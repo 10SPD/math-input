@@ -4,7 +4,7 @@
  * touch events globally) opaque to the KeypadButton.
  */
 
-const React = require('react');
+const React = require('react'); const PropTypes = require('prop-types');
 const ReactDOM = require('react-dom');
 const {connect} = require('react-redux');
 const {StyleSheet} = require('aphrodite');
@@ -18,14 +18,14 @@ const {KeyTypes} = require('../consts');
 class TouchableKeypadButton extends React.Component {
     static propTypes = {
         borders: bordersPropType,
-        childKeyIds: React.PropTypes.arrayOf(keyIdPropType),
-        disabled: React.PropTypes.bool,
-        focused: React.PropTypes.bool,
-        gestureManager: React.PropTypes.instanceOf(GestureManager),
+        childKeyIds: PropTypes.arrayOf(keyIdPropType),
+        disabled: PropTypes.bool,
+        focused: PropTypes.bool,
+        gestureManager: PropTypes.instanceOf(GestureManager),
         id: keyIdPropType.isRequired,
-        popoverEnabled: React.PropTypes.bool,
-        style: React.PropTypes.any,
-        type: React.PropTypes.oneOf(Object.keys(KeyTypes)).isRequired,
+        popoverEnabled: PropTypes.bool,
+        style: PropTypes.any,
+        type: PropTypes.oneOf(Object.keys(KeyTypes)).isRequired,
     };
 
     shouldComponentUpdate(newProps) {

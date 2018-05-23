@@ -5,7 +5,7 @@
  *  - It supports exactly two pages.
  */
 
-const React = require('react');
+const React = require('react'); const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
 const {StyleSheet} = require('aphrodite');
 
@@ -21,10 +21,10 @@ const {
 class ViewPager extends React.Component {
     static propTypes = {
         // Whether the page should animate to its next specified position.
-        animateToPosition: React.PropTypes.bool,
+        animateToPosition: PropTypes.bool,
         children: childrenPropType,
-        pageWidthPx: React.PropTypes.number.isRequired,
-        translateX: React.PropTypes.number.isRequired,
+        pageWidthPx: PropTypes.number.isRequired,
+        translateX: PropTypes.number.isRequired,
     };
 
     state = {

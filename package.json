@@ -16,6 +16,7 @@
     "jquery": "^2.1.1",
     "performance-now": "^0.2.0",
     "react-redux": "^4.4.5",
+    "react-transition-group": "1.x",
     "redux": "^3.5.0"
   },
   "devDependencies": {
@@ -34,11 +35,9 @@
     "less-plugin-clean-css": "^1.5.1",
     "mocha": "^2.4.5",
     "mocha-jsdom": "^1.1.0",
-    "react": "15.3.2",
-    "react-addons-create-fragment": "15.3.2",
-    "react-addons-css-transition-group": "15.3.2",
-    "react-addons-pure-render-mixin": "15.3.2",
-    "react-dom": "15.3.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-transition-group": "1.x",
     "webpack": "^1.13.0"
   }
 }

@@ -2,7 +2,7 @@
  * A keypad that includes all of the expression symbols.
  */
 
-const React = require('react');
+const React = require('react'); const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
 const {StyleSheet} = require('aphrodite');
 
@@ -26,12 +26,12 @@ const CursorContexts = require('./input/cursor-contexts');
 
 class ExpressionKeypad extends React.Component {
     static propTypes = {
-        currentPage: React.PropTypes.number.isRequired,
+        currentPage: PropTypes.number.isRequired,
         cursorContext: cursorContextPropType.isRequired,
-        dynamicJumpOut: React.PropTypes.bool,
-        extraKeys: React.PropTypes.arrayOf(keyIdPropType),
-        roundTopLeft: React.PropTypes.bool,
-        roundTopRight: React.PropTypes.bool,
+        dynamicJumpOut: PropTypes.bool,
+        extraKeys: PropTypes.arrayOf(keyIdPropType),
+        roundTopLeft: PropTypes.bool,
+        roundTopRight: PropTypes.bool,
     };
 
     static rows = 4;

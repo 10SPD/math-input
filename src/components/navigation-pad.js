@@ -2,7 +2,7 @@
  * A component that renders a navigation pad, which consists of an arrow for
  * each possible direction.
  */
-const React = require('react');
+const React = require('react'); const PropTypes = require('prop-types');
 
 const {StyleSheet} = require('aphrodite');
 const {View} = require('../fake-react-native-web');
@@ -19,8 +19,8 @@ const KeyConfigs = require('../data/key-configs');
 
 class NavigationPad extends React.Component {
     static propTypes = {
-        roundTopLeft: React.PropTypes.bool,
-        style: React.PropTypes.any,
+        roundTopLeft: PropTypes.bool,
+        style: PropTypes.any,
     };
 
     render() {
